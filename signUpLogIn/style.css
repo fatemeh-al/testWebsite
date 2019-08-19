@@ -47,12 +47,17 @@ body{
 .verticalBar p{
     margin: 0;
     padding: 5px;
-    background-color: pink;
+    background-color: transparent;
     font-size: 20px;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
     position: relative;
-    
+}
+
+.verticalBar p:hover{
+    background-color: pink;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .inputs-container{
