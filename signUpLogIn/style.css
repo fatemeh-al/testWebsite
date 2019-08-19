@@ -98,6 +98,7 @@ body{
     border-radius: 35%;
     font-size: 25px;
     color: #7f2ef2;
+    
 }
 
 .btn:hover{
@@ -161,7 +162,7 @@ body{
 
 .form{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     height: 50%;
     position: relative;
