@@ -1,0 +1,81 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'SignupLogin/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="triangle"></div>
+        <div class="box-login">
+            <div class="inputs-container">
+                <div class="title">
+                    Login
+                </div>
+                <form class="form" action="">
+                    <div class="inputs">
+                        <img src= " {% static 'SignupLogin/icons/email.png'%}">
+                        <input type="email"  name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputs">
+                        <img src="{% static 'SignupLogin/icons/icons8-password-1-50.png'%}">
+                        <input type="password" required name="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <href>Forgot password?</href>
+                
+            </form>
+            <button class="btn">login</button>
+            </div>
+        </div>
+        <div class="box-signup">
+            <div class="inputs-container">
+                <div class="title">
+                    Sign up
+                </div>
+                <form class="form" action="">
+                    <div class="inputs">
+                        <img src="{% static 'SignupLogin/icons/user.png'%}">
+                        <input type="text" required name="username">
+                        <label>Username</label>
+                    </div>
+                    <div class="inputs">
+                        <img src="{% static 'SignupLogin/icons/email.png'%}">
+                        <input type="email" required name="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="inputs">
+                        <img src="{% static 'SignupLogin/icons//icons8-password-1-50.png'%}">
+                        <input type="password" required name="password">
+                        <label>Password</label>
+                        
+                    </div>
+                    <div class="inputs">
+                        <img src="{% static 'SignupLogin/icons//icons8-password-1-50.png'%}">
+                        <input type="password" required name="confirm">
+                        <label>Confirm Password</label>
+                    </div>
+                
+                
+            </form>
+            <button class="btn">signup</button>
+            </div>
+        </div>
+        <div class="verticalBar">
+            <p onclick="openLoginBox()">login</p>
+            <p onclick="openSignupBox()">signup</p>
+        </div>
+
+    </div>
+</body>
+
+<script src="{% static 'SignupLogin/lojic.js' %}"></script>
+
+</html>

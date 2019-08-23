@@ -1,0 +1,178 @@
+body{
+    background-image: url(./back/345068.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* text-align: center; */
+    /* padding: 30px; */
+    z-index: 1;
+    position: relative;
+    /* background: none; */
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-right: 25px solid #a77aef;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.container{
+    /* background-color: rgb(133, 97, 97); */
+    width: 30%;
+    min-width: 300px;
+    margin: auto;
+    height: 80%;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(242, 204, 255), rgb(153, 51, 255));
+    /* background-image: url(./back/t.jpg); */
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5%;
+    z-index: 2;
+    /* background: none; */
+}
+
+
+.verticalBar{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.verticalBar p{
+    margin: 0;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    position: relative;
+}
+
+.verticalBar p:hover{
+    background-color: pink;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.inputs-container{
+  
+    background-image: url(./back/box.jpg);
+    position: absolute;
+    top: 15%;
+    width: 75%;
+    right: 0%;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
+    padding: 3%;
+    height: 65%;
+    z-index: -1;
+    /* background: none; */
+}
+
+.title{
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: left;
+    /* padding-bottom: 40px; */
+    margin-bottom: 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.inputs-container input{
+    margin-bottom: 20px;
+    height: 30px;
+    position: relative;
+}
+
+
+.btn{
+    position: absolute;
+    bottom: -6%;
+    padding: 12px;
+    width: 50%;
+    height: 15%;
+    left: 27%;
+    background-color: white;
+    border-radius: 35%;
+    font-size: 25px;
+    color: #7f2ef2;
+    
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.inputs label{
+    position: absolute;
+    left: 16%;
+    padding-top: 10px;
+}
+
+.inputs input{
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    position: relative;
+
+}
+
+.inputs input:focus + label{
+    top: -20px;
+    left: 10px;
+    background: none;
+    transition: all 0.3s;
+    /* font-size: 12px; */
+}
+
+.inputs input:focus{
+    border: 0;
+}
+
+.inputs{
+    display: flex;
+    /* overflow: hidden; */
+    background-color: white;
+    /* margin-bottom: 10%; */
+    padding: 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.inputs img{
+    /* position: absolute; */
+    height: 24px;
+    width: 27px;
+    margin: auto;
+    padding: 10px;
+}
+
+.box-signup{
+    display: none;
+}
+
+.box-login{
+    display: block;
+}
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50%;
+    position: relative;
+}
+
+/* man raftam sham
+backgrounde container ham dorost nashod
+oono age tonesti dorost kon <3 */
