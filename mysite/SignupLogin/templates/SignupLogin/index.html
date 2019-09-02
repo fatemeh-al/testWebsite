@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{% static 'SignupLogin/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,15 @@
                 <div class="title">
                     Login
                 </div>
-                <form class="form" action="">
+                <form class="form">
                     <div class="inputs">
                         <img src= " {% static 'SignupLogin/icons/email.png'%}">
-                        <input type="email"  name="email">
+                        <input type="email"  name="email" id = "login-email">
                         <label for="email">Email</label>
                     </div>
                     <div class="inputs">
                         <img src="{% static 'SignupLogin/icons/icons8-password-1-50.png'%}">
-                        <input type="password" required name="password">
+                        <input type="password" required name="password" id = "login-password">
                         <label for="password">Password</label>
                     </div>
                     <href>Forgot password?</href>
@@ -40,32 +41,32 @@
                 <div class="title">
                     Sign up
                 </div>
-                <form class="form" action="">
+                <form class="form">
                     <div class="inputs">
                         <img src="{% static 'SignupLogin/icons/user.png'%}">
-                        <input type="text" required name="username">
+                        <input type="text" required name="username" id = "username">
                         <label>Username</label>
                     </div>
                     <div class="inputs">
                         <img src="{% static 'SignupLogin/icons/email.png'%}">
-                        <input type="email" required name="email">
+                        <input type="email" required name="email" id = "signup-email">
                         <label>Email</label>
                     </div>
                     <div class="inputs">
                         <img src="{% static 'SignupLogin/icons//icons8-password-1-50.png'%}">
-                        <input type="password" required name="password">
+                        <input type="password" required name="password" id = "signup-password">
                         <label>Password</label>
                         
                     </div>
                     <div class="inputs">
                         <img src="{% static 'SignupLogin/icons//icons8-password-1-50.png'%}">
-                        <input type="password" required name="confirm">
+                        <input type="password" required name="confirm" id = "confirm-password">
                         <label>Confirm Password</label>
                     </div>
                 
                 
             </form>
-            <button class="btn">signup</button>
+            <button class="btn" onclick="addUser()">signup</button>
             </div>
         </div>
         <div class="verticalBar">

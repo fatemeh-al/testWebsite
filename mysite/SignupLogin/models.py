@@ -7,8 +7,3 @@ class User(models.Model):
 
     def __str__(self):
         return "username:" + self.username + "\nemail:" + self.email 
-    
-    
-
-
-# Create your models here.
