@@ -1,4 +1,3 @@
-// $(document).ready(function () {
 function openSignupBox(){
     var signupBox = document.getElementsByClassName("box-signup")[0];
     var loginBox = document.getElementsByClassName("box-login")[0];
@@ -65,4 +64,3 @@ function addUser(){
 
 
 }
-// })
