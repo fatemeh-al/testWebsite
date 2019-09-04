@@ -135,8 +135,7 @@ body{
 }
 
 .inputs input:valid + label{
-    top: -20px;
-    left: 10px;
+    display: none;
 }
 
 .inputs input:focus{
