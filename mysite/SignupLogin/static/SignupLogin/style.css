@@ -134,6 +134,11 @@ body{
     /* font-size: 12px; */
 }
 
+.inputs input:valid + label{
+    top: -20px;
+    left: 10px;
+}
+
 .inputs input:focus{
     border: 0;
 }
@@ -172,7 +177,3 @@ body{
     height: 50%;
     position: relative;
 }
-
-/* man raftam sham
-backgrounde container ham dorost nashod
-oono age tonesti dorost kon <3 */
