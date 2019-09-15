@@ -54,13 +54,41 @@ function addUser(){
     username:username,
     email:email,
     password:password,
+    mode: 'signup',
     }));
 
     request.addEventListener("loadend",function(event){
         console.log('loaded');
-        console.log(request.status);
-        document.getElementsByTagName('html')[0].innerHTML = request.response;
+        var response = JSON.parse(this.response);
+        console.log(response['success']);
+        if(response['success'] == true)
+            window.location.href = response['url'];
     });
 
 
+}
+
+function login(){
+    var email = document.getElementById('login-email').value;
+    var password = document.getElementById('login-password').value;
+
+    var csrfToken = getCookie('csrftoken');
+
+    var request = new XMLHttpRequest();
+    request.open('POST','http://127.0.0.1:8000/SignupLogin/');
+    request.setRequestHeader('Content-Type','application/json');
+    request.setRequestHeader("X-CSRFToken", csrfToken);
+    request.send(JSON.stringify({
+    email:email,
+    password:password,
+    mode: 'login',
+    }));
+
+    request.addEventListener("loadend",function(event){
+        console.log('login loaded');
+        var response = JSON.parse(this.response);
+        console.log(response['success']);
+        if(response['success'] == true)
+            window.location.href = response['url'];
+    });
 }
